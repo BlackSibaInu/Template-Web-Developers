@@ -31,7 +31,7 @@ BSI_Web_Developers_Service - это современный, готовый к и
 git clone https://github.com/blacksibainu/Template_Web_Developers.git
 ```
 
-2. Настройте API ключ в файле script.js:
+2. Настройте API ключ в файле emailjs.js:
 javascript
 ```bash
 emailjs.send(
