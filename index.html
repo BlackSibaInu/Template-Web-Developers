@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-Developers</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+<header>
+    <nav>
+        <div class="logo">⨀ Web-Developers ⨀</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#developers">Developers</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>  
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+</header>
+<section id="home">
+    <div class="home">
+        <div class="home-content">
+            <h1>Услуги программистов</h1>
+            <p>Веб разработка под любой уровень от Junior до Senior.</p>
+            <p>Backend Frontend Fullstack</p>
+            <button onclick="showAlert()">Узнать больше</button>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <h2>О нас</h2>
+    <p>Мы предоставляем эксклюзивные услуги и воплощаем ваш желаемый стиль.</p>
+    <div class="about-cards">
+        <div class="card">
+            <h3>Качество</h3>
+            <p>Наша команда гарантирует высокое качество каждого продукта.</p>
+        </div>
+        <div class="card">
+            <h3>Доверие</h3>
+            <p>Мы заботимся о каждом клиенте, обеспечивая исключительный сервис.</p>
+        </div>
+        <div class="card">
+            <h3>Надёжность</h3>
+            <p>Долгосрочные отношения с нашими клиентами — основа нашей работы.</p>
+        </div>
+    </div>
+</section>
+
+<section id="gallery">
+    <h2>Галерея</h2>
+    <div class="gallery">
+        <img src="https://via.placeholder.com/200" alt="Image 1">
+        <img src="https://via.placeholder.com/200" alt="Image 2">
+        <img src="https://via.placeholder.com/200" alt="Image 3">
+        <img src="https://via.placeholder.com/200" alt="Image 4">
+        <img src="https://via.placeholder.com/200" alt="Image 5">
+    </div>
+</section>
+<section id = "developers"class="developers-h2"><h2>Developers</h2></section>
+<section id= "developers-cards" class="developers">
+    <div class="developers-card">
+        <p>Senior Fullstack Web-Developer опыт работы на глазу, разработчик со 12-летним стажем!</p>
+        <span><button class="developers-link" onclick="window.location.href='https://github.com/NoName'"> — NoName </button></span>
+    </div>
+    <div class="developers-card">
+        <p>Middle Fullstack Web-Developer опыт работы 3 года, так же пишет игры на платформе Godot.</p>
+        <span><button class="developers-link" onclick="window.location.href='https://github.com/blacksibainu'"> — BlackSibaInu </button></span>
+    </div>
+    <div class="developers-card">
+        <p>Junior Web-Developer опыт работы год, чистый Frontend разработка.</p>
+        <span><button class="developers-link" onclick="window.location.href='https://github.com/user_name'"> — NoName </button></span>
+    </div>
+    <div class="developers-card">
+        <p>Senior Backend Web-Developer опыт работы на глазу, разработчик со 15-летним стажем!</p>
+        <span><button class="developers-link" onclick="window.location.href='https://github.com/user_name'"> — NoName </button></span>
+    </div>
+    <div class="developers-card">
+        <p>Middle Frontend Web-Developer опыт работы 5 лет, также пишет игры на платформе Godot.</p>
+        <span><button class="developers-link" onclick="window.location.href='https://github.com/user_name'"> — NoName </button></span>
+    </div>
+    <div class="developers-card">
+        <p>Junior Backend Web-Developer опыт работы 2 года, чистый Backend разработка</p>
+        <span><button class="developers-link" onclick="window.location.href='https://github.com/user_name'"> — NoName </button></span>
+    </div>
+    <div class="developers-card">
+        <p>Junior Fullstack Web-Developer опыт работы 1 год, чистый Fullstack</p>
+        <span><button class="developers-link" onclick="window.location.href='https://github.com/user_name'"> — NoName </button></span>
+    </div>
+    <div class="developers-card">
+        <p>Junior Frontend Web-Developer опыт работы 1 год, чистый Frontend</p>
+        <span><button class="developers-link" onclick="window.location.href='https://github.com/user_name'"> — NoName </button></span>
+    </div>
+    <div class="developers-card">
+        <p>Senior Fullstack Web-Developer опыт работы на глазу, разработчик со 10-летним стажем!</p>
+        <span><button class="developers-link" onclick="window.location.href='https://github.com/user_name'"> — NoName </button></span>
+    </div>
+</section>
+
+
+<section id="contact">
+    <h2>Свяжитесь с нами</h2>
+    <p>Для связи снами напишите нам на почту.</p>
+    <form id="contactForm">
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+
+        <label for="email">Ваш email:</label>
+        <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
+
+        <label for="message">Ваше сообщение:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Напишите ваше сообщение..." required></textarea>
+
+        <button type="submit">Отправить</button>
+    </form>
+    <div class="notification-container">
+        <div id="notification" class="notification"></div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Web-Developers. Все права защищены.</p>
+</footer>
+<script src="script.js"></script>
+<script src="emailjs.js"></script>
+<script src="notification.js"></script>
+<script src="menu.js"></script>
+</body>
+</html>
+
+
